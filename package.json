@@ -1,0 +1,34 @@
+{
+  "name": "email-backend",
+  "version": "1.0.0",
+  "description": "用户管理系统 - 基于React + NestJS的邮箱验证码登录系统",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run start:dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "cd backend && npm run start:prod",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "react",
+    "nestjs",
+    "typescript",
+    "user-management",
+    "email-auth",
+    "jwt",
+    "postgresql",
+    "redis"
+  ],
+  "author": "Email Backend Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
